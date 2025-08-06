@@ -1,12 +1,14 @@
 "use client";
 import * as React from "react";
 import Button from "./Button";
+import Link from "next/link";
 
 type HeroSectionProps = {
   heading: string;
   subheading: string;
   description: string;
   buttonLabel: string;
+  buttonHref?: string;
   imageUrl: string;
   onButtonClick?: () => void;
   className?: string;
@@ -18,6 +20,7 @@ export default function HeroSection({
   description,
   buttonLabel,
   imageUrl,
+  buttonHref = "#",
   onButtonClick,
   className = "",
 }: HeroSectionProps) {
@@ -36,6 +39,7 @@ export default function HeroSection({
             {description}
           </p>
 
+          <Link href={buttonHref}>
           <Button
             className="mt-8 ml-12 h-[90px] w-[300px] max-sm:h-[70px] max-sm:w-[280px]"
             onClick={onButtonClick}
@@ -44,7 +48,9 @@ export default function HeroSection({
               {buttonLabel}
             </div>
           </Button>
+          </Link>
         </div>
+          
 
         {/* Image Column */}
         <div className="w-3/12 flex justify-center max-md:w-full max-md:mt-8">

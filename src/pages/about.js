@@ -71,6 +71,7 @@ export default function Home() {
   description="We combine clear, honest content with thoughtful design and SEO that helps people find you."
   imageUrl="https://cdn.builder.io/api/v1/image/assets%2F446bf9bd9f0c4de4b2a3ec5553450a3b%2F1624c17a767e4999988c163881c57cd0"
   buttonLabel="Let's get started"
+  buttonHref="/contact"
   
 />
 <Paragraph
@@ -89,6 +90,7 @@ export default function Home() {
 <PromoBanner
         headline="Want less guesswork and more impact from your online content?"
         buttonLabel="Book a free consultation"
+        buttonHref="/contact"
         onButtonClick={() => {
           // You could navigate, open a modal, or track analytics here
           console.log("CTA clicked!");

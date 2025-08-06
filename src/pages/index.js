@@ -9,6 +9,7 @@ import RelatedArticlesCarousel from '../components/RelatedArticlesCarousel';
 import Video from '../components/Video';  
 
 import CTAButton from '../components/Button';
+import Link from 'next/link';
 const sampleArticles = [
   {
     id: 1,
@@ -55,14 +56,16 @@ export default function Home() {
     <Layout>
       <div className="pt-24 container mx-auto px-4">
        
+              
         <Hero
   heading="BrightPage"
   subheading="Brighter content, better business"
   description="We help businesses stand out online with strategic content, clean design, and smart SEO — without the jargon."
   imageUrl="https://images.ctfassets.net/3lcab0ooru78/4aSelQsxElXInHWGTG5GfM/2238aaa98b98c8b5ee2ce26d1a05494d/Hero_banner_-_Homepage.png"
   buttonLabel="Let's get started"
+  buttonHref="/contact"
+  />
   
-/>
 <OurServices />
 
 
@@ -94,6 +97,7 @@ export default function Home() {
      <PromoBanner
         headline="Ready to simplify your digital presence?"
         buttonLabel="Book a free consultation"
+        buttonHref="/contact"
         onButtonClick={() => {
           // You could navigate, open a modal, or track analytics here
           console.log("CTA clicked!");

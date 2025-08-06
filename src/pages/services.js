@@ -55,6 +55,7 @@ export default function Home() {
   description="Our services span every layer of digital growth — from modular site builds and ongoing support to personalised AI-driven content and strategic visibility across search and social. Whether you're starting fresh or scaling fast, we help your website do more and mean more to the people you serve."
   imageUrl="https://cdn.builder.io/api/v1/image/assets%2F446bf9bd9f0c4de4b2a3ec5553450a3b%2F1624c17a767e4999988c163881c57cd0"
   buttonLabel="Let's get started"
+  buttonHref="/contact"
   
 />
 <OurServices />
@@ -83,6 +84,7 @@ export default function Home() {
 <PromoBanner
         headline="Want less guesswork and more impact from your online content?"
         buttonLabel="Book a free consultation"
+        buttonHref="/contact"
         onButtonClick={() => {
           // You could navigate, open a modal, or track analytics here
           console.log("CTA clicked!");
