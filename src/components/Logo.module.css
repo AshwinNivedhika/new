@@ -1,0 +1,23 @@
+/* Logo.module.css */
+
+.logo {
+  aspect-ratio: 1 / 1;
+  height: 182px;
+  width: 182px;
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+  .logo {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+}

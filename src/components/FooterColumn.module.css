@@ -1,0 +1,27 @@
+/* FooterColumn.module.css */
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.125rem; /* ~18px (text-lg) */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  font-size: 0.875rem; /* ~14px (text-sm) */
+  color: #4b5563; /* ~text-gray-600 */
+  transition: color 0.2s ease-in-out;
+}
+
+.listItem:hover {
+  color: #000000;
+}

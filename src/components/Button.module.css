@@ -1,0 +1,46 @@
+/* components/Button.module.css */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-cyan, rgb(8, 118, 118));
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Size variants */
+.default {
+  height: 90px;
+  width: 300px;
+}
+
+.large {
+  height: 90px;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .default {
+    height: 70px;
+    width: 280px;
+  }
+  .large {
+    height: 70px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .default,
+  .large {
+    width: 100%;
+  }
+}
